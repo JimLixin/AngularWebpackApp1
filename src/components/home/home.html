@@ -1,0 +1,10 @@
+<div class="col-sm-12">
+    <h1> Content of Home  {{ vm.name }}</h1>
+    <h1>Mockup Data:<h1/>
+    <ul>
+        <li ng-repeat="data in vm.dataList">{{data}}</li>
+    </ul>
+    <input type="button" value="Change Name" ng-click="vm.changeThisName();" />
+    <input type="button" value="Go to New" ng-click="vm.goToNew();" />
+    <input type="button" value="Get mockup data" ng-click="vm.getMockupData();" />
+</div>
